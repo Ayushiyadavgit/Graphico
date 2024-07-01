@@ -1,38 +1,272 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+ZA:wght@100..400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playwrite+ZA:wght@100..400&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-xl{
+  height: 100px;
+  width: 100%;
+  background-color: #f4f5fb;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  vertical-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    float: left;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-xl ul  li {
+  list-style: none;
+  padding: 5px 15px;
+  display: flex;
+  float: left;
+}
+
+.navbar-xlbar-xl ul li:hover {
+  border-bottom: 2px solid #0d0c22;
+}
+.navbar-xl li a {
+  text-decoration: none;
+  color: #0d0c22;
+  font-size: 17px;
+  
+}
+
+.dropdown:active li {
+  display: block;
+}
+.dropdown ul{
+  margin-top: 60px ;
+}
+
+.dropdown ul li {
+  list-style: none;
+  padding-left: 15px;
+  display: block;
+  border-bottom: none;
+  width: 110px;
+  height: 30px;
+}
+
+.dropdown ul li:hover {
+  background: #0d0c22;
   color: white;
+  
+}
+.dropdown ul li:hover a {
+  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown:hover {
+  border: none;
+}
+.dropdown:hover ul {
+  display: block;
+  margin-bottom: -100%;
+  
+}
+.dropdown ul {
+  background-color: white;
+  width: 140px;
+  position: relative;
+  display: none;
+  box-shadow: 0px 0px 5px 1px lightgray;
+  border-radius: 10px;
+  margin-top: 20px;
+  left: -20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: #0d0c22;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  font-family: "Playwrite ZA", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.Search {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  padding: 5px 15px;
+  height: 35px;
+  border-radius: 50px;
+  margin-right: 10px;
+  width: 15%;
+}
+::placeholder{
+  padding-left: 10%;
+}
+
+.btn {
+  background-color: #0d0c22;
+  margin: 0px 10px 0px 10px;
+  width: 8%;
+  border-radius: 50px;
+  font-size: 15px;
+  color: white;
+  height: 45%;
+  
+}
+.btn:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.searchIcon{
+  position: relative;
+  left: 8%;
+  top: 5px;
+}
+.hamburger{
+  display: none;
+}
+
+.navbar-s{
+  display: none;
+
+}
+.menu-bar{
+  display: none;
+}
+.hide{
+  display: none !important;
+}
+.show{
+  display: block !important;
+}
+
+/* --------------------------resposive ----------- */
+
+@media (max-width:980px){
+  .navbar-s{
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-xl{
+    display: none;
   }
+  .menu-bar{
+    display: block;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    width: 100%;
+    height: 3vh; /* Adjust the height as needed */
+    }
+  .column {
+      padding: 10px;
+      position: relative;
+      display: flex;
+  }
+  .left {
+    display: flex;
+    justify-content: left;
+      align-items: left;
+      text-align: center;
+      
+    }
+    .left .icon{
+      margin-top: 20px;
+      font-size: x-large;
+      color: #0d0c22;
+    }
+    
+    .menu-bar ul{
+      
+      flex-direction: column;
+      width: 100%;
+      margin-bottom:0.25rem ;
+      background-color: white;
+      padding: 10px 0px 0px 0px;
+      margin-top: 10%;
+    }
+    .menu-bar ul li{
+      width: 100%;
+      padding: 10px 0px 10px 0px;
+    }
+    .menu-bar ul li a{
+      text-decoration: none;
+      color:#0d0c22;
+      padding-left: 40px;
+      padding-top: 5%;
+    }
+    
+    .menu-bar ul li:hover a{
+      color: #6a696e;
+    }
+
+    /* .menu-bar .open{
+      display: flex;
+    } */
+    .subcategory{
+      color:#0d0c22;
+      padding-left: 40px;
+    
+      
+    }
+    .subcategory span{
+      padding-left: 40px;
+    }
+    .subcategory ul{
+      margin-top: -0px;
+    }
+    .subcategory ul li{
+      list-style: none;
+      padding-left:10px; 
+    }
+    
+    .subcategory ul li a{
+      font-size: 15px;
+      padding-left: 40px;
+      text-decoration: none;
+      color: #0d0c22;
+    }
+    .subcategory ul li:active a{
+      color:#6a696e;
+    }
+    .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .logo{
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+    }
+    .right {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    }
+    .btn{
+      width: 100%;
+      padding: 15px 5px;
+      margin-top: 10px;   }
+    .menu-bar .option{
+      font-size: 10px;
+      color: #0d0c22;
+      padding-left: 40px;
+    }
+    .menu-bar .option:hover{
+      color:white;
+    }
+
 }
