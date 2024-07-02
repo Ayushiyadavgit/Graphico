@@ -153,120 +153,154 @@
 
 /* --------------------------resposive ----------- */
 
-@media (max-width:980px){
-  .navbar-s{
+@media (max-width:980px) {
+  .navbar-s {
     display: block;
-  }
-  .navbar-xl{
-    display: none;
-  }
-  .menu-bar{
-    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
 
-  .container {
+  .navbar-xl {
+    display: none;
+  }
+
+ .container {
     display: grid;
     grid-template-columns: 20% 50% 30%;
     width: 100%;
-    height: 3vh; /* Adjust the height as needed */
+    height: 10vh; /* Adjust the height as needed */
     }
+
   .column {
       padding: 10px;
       position: relative;
       display: flex;
   }
+
   .left {
     display: flex;
     justify-content: left;
-      align-items: left;
-      text-align: center;
-      
-    }
-    .left .icon{
-      margin-top: 20px;
-      font-size: x-large;
-      color: #0d0c22;
-    }
-    
-    .menu-bar ul{
-      
-      flex-direction: column;
-      width: 100%;
-      margin-bottom:0.25rem ;
-      background-color: white;
-      padding: 10px 0px 0px 0px;
-      margin-top: 10%;
-    }
-    .menu-bar ul li{
-      width: 100%;
-      padding: 10px 0px 10px 0px;
-    }
-    .menu-bar ul li a{
-      text-decoration: none;
-      color:#0d0c22;
-      padding-left: 40px;
-      padding-top: 5%;
-    }
-    
-    .menu-bar ul li:hover a{
-      color: #6a696e;
-    }
+    align-items: left;
+    text-align: center;
+}
 
-    /* .menu-bar .open{
-      display: flex;
-    } */
-    .subcategory{
-      color:#0d0c22;
-      padding-left: 40px;
+  .left .icon {
+    margin-top: 20px;
+    font-size: x-large;
+    color: #0d0c22;
     
-      
-    }
-    .subcategory span{
-      padding-left: 40px;
-    }
-    .subcategory ul{
-      margin-top: -0px;
-    }
-    .subcategory ul li{
-      list-style: none;
-      padding-left:10px; 
-    }
-    
-    .subcategory ul li a{
-      font-size: 15px;
-      padding-left: 40px;
-      text-decoration: none;
-      color: #0d0c22;
-    }
-    .subcategory ul li:active a{
-      color:#6a696e;
-    }
-    .center {
+  }
+  .menu-bar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    overflow: hidden;
+    display: block;
+    height: 0px;
+    transition: height 2 ease  ;
+  }
+
+  .menu-bar ul {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom:0.25rem ;
+    background-color: white;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .menu-bar ul li {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .menu-bar ul li a {
+    text-decoration: none;
+    color:#0d0c22;
+    padding-left: 40px;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  
+  .menu-bar ul li:hover a {
+    color: #6a696e;
+  }
+
+  .subcategory {
+    color:#0d0c22;
+    padding-left: 40px;
+  }
+
+  .subcategory span {
+    padding-left: 40px;
+  }
+
+  .subcategory ul {
+    margin-top: -0px;
+  }
+
+  .subcategory ul li {
+    list-style: none;
+    padding-left:10px; 
+  }
+  
+  .subcategory ul li a {
+    font-size: 15px;
+    padding-left: 40px;
+    text-decoration: none;
+    color: #0d0c22;
+  }
+
+  .subcategory ul li:active a {
+    color:#6a696e;
+  }
+
+  .center {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    }
-    .logo{
+  }
+
+  .logo {
     font-size: 20px;
-    /* margin-bottom: 10px; */
-    }
-    .right {
+  }
+
+  .right {
     display: flex;
     justify-content: right;
     align-items: right;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px 5px;
+    margin-top: 10px;   
+  }
+
+  .menu-bar .option {
+    font-size: 10px;
+    color: #0d0c22;
+    padding-left: 40px;
+  }
+
+  .menu-bar .option:hover {
+    color:white;
+  }
+
+  .menu-bar.hideMenubar {
+    height: 0px !important;
+  }
+
+  .menu-bar.showMenubar {
+    height: 500px !important;
+    
+  }
+
+  @keyframes menubarShowAnimation {
+    0%{
+      height: 0px !important;
     }
-    .btn{
-      width: 100%;
-      padding: 15px 5px;
-      margin-top: 10px;   }
-    .menu-bar .option{
-      font-size: 10px;
-      color: #0d0c22;
-      padding-left: 40px;
+    100%{
+      min-height: 100px !important;
     }
-    .menu-bar .option:hover{
-      color:white;
-    }
+  }
 
 }

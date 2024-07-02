@@ -11,15 +11,19 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}></Route>
-        <Route path="/About" element={<About />}></Route>
-        <Route path="/Contact" element={<Contact />}></Route>
-        <Route path="/Art" element={<Art />}></Route>
-        <Route path="/Graphics" element={<Graphics />}></Route>
-        <Route path="/Picture" element={<Picture />}></Route>
-        <Route path="/Sculpture" element={<Sculpture />}></Route>
-        
-        
+        <Route path ="*" element={<Layout>
+          <Routes>
+              <Route path="/About" element={<About />}></Route>
+              <Route path="/Contact" element={<Contact />}></Route>
+              <Route path="/Art" element={<Art />}></Route>
+              <Route path="/Graphics" element={<Graphics />}></Route>
+              <Route path="/Picture" element={<Picture />}></Route>
+              <Route path="/Sculpture" element={<Sculpture />}></Route>
+          </Routes>
+        </Layout>}/>
+
+
+        {/* Componets out of layout will be here */}
       </Routes>
     </BrowserRouter>
   )

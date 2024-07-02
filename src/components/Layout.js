@@ -1,9 +1,16 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-function Layout() {
+function Layout({children}) {
   return (
-    <Navbar></Navbar>
+    <div >
+      <div>
+        <Navbar></Navbar>
+      </div>
+
+      <main>{children}</main>
+    </div>
+    
   )
 }
 

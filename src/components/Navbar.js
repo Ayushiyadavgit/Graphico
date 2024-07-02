@@ -55,9 +55,9 @@ function Navbar() {
         
    {/* ---------------------     mobile-view  ----------------- */}
       </nav>
-      <nav className="navbar-s container" onClick={() => setMenuOpen(!menuOpen)}>
+      <nav className="navbar-s container" >
         <div className="column left" >
-            <span className='icon'>{!menuOpen? <Menu></Menu> : <Close></Close> }</span> 
+            <span className='icon'onClick={() => setMenuOpen(!menuOpen)}>{!menuOpen? <Menu></Menu> : <Close></Close> }</span> 
             
         </div>
 {/* ---------------------Icon----------------------- */}
@@ -76,8 +76,8 @@ function Navbar() {
       </nav>
 {/* ------------------------Menu Bar------------ */}
       
-      <div className='menu-bar' >
-        <ul className={menuOpen ? 'show' : "hide"} >
+      <div className={'menu-bar ' + ( menuOpen ? 'showMenubar' : "hideMenubar")} >
+        <ul  >
           <li>
             <a href="/">Home</a>
           </li>
