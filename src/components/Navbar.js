@@ -1,13 +1,13 @@
 import React  , {useState} from 'react';
 import "../App.css";
 import {Search, Menu, Close } from '@mui/icons-material';
-function Navbar() {
 
+function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false) ;
   return (
     <header>
       <nav className='navbar-xl'>
-        {/* Menu part */}
+{/* ------------------------Menu part */}
         <ul id='menu'>
           <li>
             <a href="/">Home</a>
@@ -22,7 +22,7 @@ function Navbar() {
             <a href="#" >Category</a>
             <ul>
               <li>
-                <a href="/Picture">Picture</a>
+                <a href="/Photo">Picture</a>
                 
               </li>
               <li>
@@ -41,19 +41,19 @@ function Navbar() {
           </li>
         </ul>
           
-        {/* Logo part */}
+{/* ---------------------------------Logo part */}
         
         <span className="logo">Graphico</span>
         
-        {/* Login part */}
+{/* ------------------------------------Login part */}
         
         <span className='searchIcon'>
           <Search></Search>
         </span>
         <input className="Search" placeholder="Search"></input>
-        <button className="btn">Log in</button>
+        <button className="btn"><a href='/Login'>Log in</a></button>
         
-   {/* ---------------------     mobile-view  ----------------- */}
+   {/* ------------------------------ mobile-view---------------------------------------------------------------------------- */}
       </nav>
       <nav className="navbar-s container" >
         <div className="column left" >
@@ -65,13 +65,13 @@ function Navbar() {
         <span className="logo">Graphico</span>
         </div>
 
-{/* -----------------------------Login button and search bar----- */}
+{/* -----------------------Login button and search bar*/}
         <div className="column right">
           {/* <span className='searchIcon'>
             <Search></Search>
           </span>
           <input className="Search" placeholder="Search"></input> */}
-          <button className="btn">Log in</button>
+          <button className="btn"><a href='/Login'>Log in</a></button>
         </div>
       </nav>
 {/* ------------------------Menu Bar------------ */}
@@ -95,7 +95,7 @@ function Navbar() {
                 <span className='option'>Hand made sketch</span>
               </li>
               <li>
-                <a href="/Picture">Picture</a><br></br>
+                <a href="/Photo">Picture</a><br></br>
                 <span className='option'>photography collection</span>
               </li>
               <li>

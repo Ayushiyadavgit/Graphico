@@ -1,9 +1,10 @@
 import React from 'react'
+import Scroller from '../scroller';
 
 function Home() {
   return (
     <>
-      <div>Home</div>
+    <Scroller></Scroller>
     </>
   );
 }
