@@ -13,7 +13,7 @@ function Photo() {
             <div className="photo-outer">
                 <div className="photo">
                     <div className="photo-container">
-                        <img src={cycle} alt="image" />
+                        <img src={cycle} alt="missing" />
                     </div>
                     <div className="photo-icon-box">
                         <span>

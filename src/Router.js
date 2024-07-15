@@ -50,14 +50,6 @@ function Router() {
                                     path="/Signin"
                                     element={<Signin />}
                                 ></Route>
-                                <Route
-                                    path="/Photo"
-                                    element={<Photo />}
-                                ></Route>
-                                <Route
-                                    path="/SingleCard"
-                                    element={<SingleCard />}
-                                ></Route>
                             </Routes>
                         </Layout>
                     }
