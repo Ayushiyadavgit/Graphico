@@ -22,7 +22,7 @@ function Navbar() {
                         <a href="#">Category</a>
                         <ul>
                             <li>
-                                <a href="/Photo">Picture</a>
+                                <a href="/Picture">Picture</a>
                             </li>
                             <li>
                                 <a href="/Art">Art</a>

@@ -959,3 +959,12 @@
 }
 
 /* background: linear-gradient(0deg, rgba(15,15,15,1) 2%, rgba(0,0,0,0.8679653679653679) 49%, rgba(0,0,0,0.09307359307359309) 100%); */
+
+.column-container {
+    width: 33.33vw;
+}
+
+.container-fluid {
+    display: flex;
+    float: left;
+}
