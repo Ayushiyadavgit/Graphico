@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function SingleCard() {
-  return (
-    <div>SingleCard</div>
-  )
+    return <div>SingleCard</div>;
 }
 
-export default SingleCard
+export default SingleCard;

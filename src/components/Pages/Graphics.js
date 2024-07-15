@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Graphics() {
-  return (
-    <>
-      <div>Graphics</div>
-    </>
-  );
+    return (
+        <>
+            <div>Graphics</div>
+        </>
+    );
 }
 
 export default Graphics;

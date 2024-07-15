@@ -1,12 +1,12 @@
-import React from 'react'
-import Scroller from '../scroller';
+import React from "react";
+import Scroller from "../scroller";
 
 function Home() {
-  return (
-    <>
-    <Scroller></Scroller>
-    </>
-  );
+    return (
+        <>
+            <Scroller></Scroller>
+        </>
+    );
 }
 
 export default Home;

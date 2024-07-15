@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Sculpture() {
-  return (
-    <>
-      <div>Sculpture</div>
-    </>
-  );
+    return (
+        <>
+            <div>Sculpture</div>
+        </>
+    );
 }
 
 export default Sculpture;

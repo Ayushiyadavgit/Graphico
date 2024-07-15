@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Picture() {
-  return (
-    <>
-      <div>Picture</div>
-    </>
-  );
+    return (
+        <>
+            <div>Picture</div>
+        </>
+    );
 }
 
 export default Picture;
