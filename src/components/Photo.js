@@ -1,5 +1,4 @@
 import React from "react";
-import cycle from "../assets/cycle.png";
 import {
     FavoriteBorder,
     Visibility,
@@ -7,21 +6,22 @@ import {
     BookmarkBorder,
 } from "@mui/icons-material";
 
-function Photo() {
+function Photo({ src, title }) {
     return (
         <>
             <div className="photo-outer">
                 <div className="photo">
                     <div className="photo-container">
-                        <img src={cycle} alt="missing" />
+                        <img src={src} alt="missing" />
                     </div>
                     <div className="photo-icon-box">
                         <span>
-                            <FavoriteBorder className="photo-icon" />
+                            <FavoriteBorder />
                         </span>
                         <span>
                             <BookmarkBorder />
                         </span>
+                        <span>{title}</span>
                     </div>
                     <div className="photo-outerIcon">
                         <span className="heart">

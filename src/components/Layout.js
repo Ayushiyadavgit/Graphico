@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Scroller from "./scroller";
 
 function Layout({ children }) {
     return (
@@ -8,7 +7,6 @@ function Layout({ children }) {
             <div>
                 <Navbar></Navbar>
             </div>
-            {/* <Scroller></Scroller> */}
             <main>{children}</main>
         </div>
     );
