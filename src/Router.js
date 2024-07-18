@@ -9,9 +9,6 @@ import Picture from "./components/Pages/Picture";
 import Sculpture from "./components/Pages/Sculpture";
 import Login from "./components/Pages/Login";
 import Signin from "./components/Pages/Signin";
-import Photo from "./components/Photo";
-import SingleCard from "./components/SingleCard";
-import Home  from "./components/Pages/Home";
 
 function Router() {
     return (
@@ -22,10 +19,6 @@ function Router() {
                     element={
                         <Layout>
                             <Routes>
-                                <Route
-                                    path="/Home"
-                                    element={<Home />}
-                                ></Route>
                                 <Route
                                     path="/About"
                                     element={<About />}

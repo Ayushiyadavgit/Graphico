@@ -10,7 +10,7 @@ function Navbar() {
                 {/* ------------------------Menu part */}
                 <ul id="menu">
                     <li>
-                        <a href="/Home">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="/About">About</a>
@@ -87,7 +87,7 @@ function Navbar() {
             >
                 <ul>
                     <li>
-                        <a href="/Home">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="/About">About</a>

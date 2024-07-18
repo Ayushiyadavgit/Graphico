@@ -34,6 +34,7 @@
 .navbar-xlbar-xl ul li:hover {
     border-bottom: 2px solid #0d0c22;
 }
+
 .navbar-xl li a {
     text-decoration: none;
     color: #0d0c22;
@@ -43,6 +44,7 @@
 .dropdown:active li {
     display: block;
 }
+
 .dropdown ul {
     margin-top: 60px;
 }
@@ -60,6 +62,7 @@
     background: #0d0c22;
     color: white;
 }
+
 .dropdown ul li:hover a {
     color: white;
 }
@@ -478,6 +481,7 @@
 
 /* --------------- Login Response --------------------- */
 @media (max-width: 690px) {
+
     .google {
         width: 45%;
         margin-top: 30px;
@@ -513,6 +517,7 @@
         padding: 20px;
     }
 }
+
 
 @media (max-width: 430px) {
     .Heading {
@@ -774,6 +779,7 @@
     color: #8c8989;
     font-size: 13px;
 }
+
 .registration-para a {
     color: #8c8989;
 }
@@ -900,32 +906,34 @@
     
 }
 
--------------------------- SingleCard ------------------------
+/* SingleCard-component------------------------ */
 
-.header-outer{
+.header-outer {
     margin: 10px;
-    position: relative;
+    height: 50%;
+    width: 50%;
+
 }
 
-.head-inner{
+.head-inner {
     position: absolute;
     top:18%;
     height: 15%;
     width: 100%;
 }
 
-.head-title{
+.head-title {
     position: absolute;
     top: 20%;
     left: 15%;
 }
 
-.head-title span{
+.head-title span {
     font-size: 30px;
     font-weight: bold;
 }
 
-.head-profile img{
+.head-profile img {
     position: absolute;
     top: 60%;
     left: 15%;
@@ -934,34 +942,34 @@
     border-radius: 50%;
 }
 
-.head-profile span{
+.head-profile span {
     position: absolute;
     top: 71%;
     left: 19.9%;
     font-weight: bold;
 }
 
-.head-icon span{
+.head-icon span {
     position: absolute;
     left: 73%;
     color: #0d0c22;
     cursor: pointer;
 }
 
-.head-icon span:nth-child(1){
+.head-icon span:nth-child(1) {
     position: absolute;
     left: 70% ;
 }
 
-.head-icon span:nth-child(1):hover{
+.head-icon span:nth-child(1):hover {
     color: rgb(241, 99, 99) ;
 }
 
-.head-icon span:nth-child(2):hover{
+.head-icon span:nth-child(2):hover {
     color: rgb(146, 139, 139) ;
 }
 
-.head-button{
+.head-button {
     position: absolute;
     top: 60%;
     left: 75%;
@@ -973,12 +981,12 @@
     box-shadow: 2px 5px 3px #888888;
 }
 
-.head-button a{
+.head-button a {
     text-decoration: none;
     color: white;
 }
 
-.card-image img{
+.card-image img {
     position: absolute;
     left: 15%;
     right: 15%;
@@ -992,37 +1000,37 @@
 
 @media (max-width:1024px)  {
     
-    .head-title{
+    .head-title {
         position: absolute;
         top: 27%;
         left: 5%;
     }
 
-    .head-profile span{
+    .head-profile span {
         position: absolute;
         top: 71%;
         left: 13%;
         font-size:20px ;
     }
 
-    .head-icon span{
+    .head-icon span {
         position: absolute;
         left: 76%;
     }
 
-    .head-icon span:nth-child(1){
+    .head-icon span:nth-child(1) {
         position: absolute;
         left: 70% ;
     }
 
-    .head-button{
+    .head-button {
         position: absolute;
         left: 82%;
         width: 14%;
         height: 35%;
     }
 
-    .head-profile img{
+    .head-profile img {
         position: absolute;
         top: 63%;
         left: 5%;
@@ -1030,7 +1038,7 @@
         height: 48px;
     }
 
-    .card-image img{
+    .card-image img {
         position: absolute;
         left: 5%;
         right: 6%;
@@ -1045,29 +1053,29 @@
 
 @media (max-width:640px)  {
 
-    .head-title{
+    .head-title {
         position: absolute;
         top: 20%;
     }
 
-    .head-profile span{
+    .head-profile span {
         position: absolute;
         top: 71%;
         left: 19%;
         font-size:17px ;
     }
 
-    .head-icon span{
+    .head-icon span {
         position: absolute;
         left: 67%;
     }
 
-    .head-icon span:nth-child(1){
+    .head-icon span:nth-child(1) {
         position: absolute;
         left: 61% ;
     }
 
-    .head-button{
+    .head-button {
         position: absolute;
         left: 74%;
         width: 23%;
@@ -1075,7 +1083,7 @@
         top: 63%;
     }
 
-    .head-profile img{
+    .head-profile img {
         position: absolute;
         top: 59%;
         left: 5%;
@@ -1083,7 +1091,7 @@
         height: 48px;
     }
 
-    .card-image img{
+    .card-image img {
         position: absolute;
         left: 5%;
         right: 6%;
@@ -1095,9 +1103,12 @@
 
 }
 
----------About-us-------------------------------
+/* ---------About-us------------------------------- */
 
-
+.about-outer{
+    height: 50%;
+    width: 50%;
+}
 .about-us{
     background-color: rgb(252, 252, 252);
     box-shadow: 0.5px 4px 8px #888888;
