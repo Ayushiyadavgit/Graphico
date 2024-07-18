@@ -10,7 +10,7 @@ function Navbar() {
                 {/* ------------------------Menu part */}
                 <ul id="menu">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/Home">Home</a>
                     </li>
                     <li>
                         <a href="/About">About</a>
@@ -87,7 +87,7 @@ function Navbar() {
             >
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/Home">Home</a>
                     </li>
                     <li>
                         <a href="/About">About</a>
@@ -104,7 +104,7 @@ function Navbar() {
                                 <span className="option">Hand made sketch</span>
                             </li>
                             <li>
-                                <a href="/Photo">Picture</a>
+                                <a href="/Picture">Picture</a>
                                 <br></br>
                                 <span className="option">
                                     photography collection

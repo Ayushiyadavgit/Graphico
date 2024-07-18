@@ -1,9 +1,11 @@
 import React from "react";
+import SingleCard from "../SingleCard";
+
 
 function Graphics() {
     return (
         <>
-            <div>Graphics</div>
+        <SingleCard></SingleCard>
         </>
     );
 }

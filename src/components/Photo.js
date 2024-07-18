@@ -23,15 +23,17 @@ function Photo({ src, title }) {
                         </span>
                         <span>{title}</span>
                     </div>
+                    <div className="profile">
+                        <img src={src} alt='not found'/>
+                        <text>DSYK</text>
+                    </div>
                     <div className="photo-outerIcon">
-                        <span className="heart">
-                            <Favorite />
+                        <span className="heart"><Favorite />
                         </span>
-                        <text className="like">334</text>
-                        <span className="photo-icon">
-                            <Visibility />
-                            <text className="visible">1.5k</text>
+                        <span className="like">334</span>
+                        <span className="photo-icon"><Visibility />
                         </span>
+                        <span className="visible">1.5k</span>
                     </div>
                 </div>
             </div>

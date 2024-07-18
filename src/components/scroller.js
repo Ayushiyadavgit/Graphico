@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
     KeyboardDoubleArrowLeft,
     KeyboardDoubleArrowRight,
@@ -17,29 +17,29 @@ import img3 from "../assets/img3.avif";
 import batman from "../assets/batman.png";
 
 function Scroller() {
-    const scrollRef = useRef(null);
+    // const scrollRef = useRef(null);
 
-    const scrollLeft = () => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({ left: 350, behavior: "smooth" });
-        }
-    };
+    // const scrollLeft = () => {
+    //     if (scrollRef.current) {
+    //         scrollRef.current.scrollBy({ left: 350, behavior: "smooth" });
+    //     }
+    // };
 
-    const scrollRight = () => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
-        }
-    };
+    // const scrollRight = () => {
+    //     if (scrollRef.current) {
+    //         scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
+    //     }
+    // };
 
     return (
         <>
             <div className="main-scroll-div">
-                <div>
+                {/* <div>
                     <button className="icon" onClick={scrollLeft}>
                         <KeyboardDoubleArrowLeft />
                     </button>
-                </div>
-                <div className="cover" ref={scrollRef}>
+                </div> */}
+                <div className="cover">
                     <div className="scroll-image">
                         <div className="child">
                             <img className="child-img" src={img5} alt="image" />
@@ -87,11 +87,11 @@ function Scroller() {
                         </div>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <button className="icon" onClick={scrollRight}>
                         <KeyboardDoubleArrowRight />
                     </button>
-                </div>
+                </div> */}
             </div>
         </>
     );
